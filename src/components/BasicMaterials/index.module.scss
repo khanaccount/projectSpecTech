@@ -1,0 +1,36 @@
+.Materials {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-bottom: 80px;
+	h1 {
+		padding-bottom: 60px;
+		font-size: 42px;
+		font-weight: 500;
+	}
+	.cards {
+		display: flex;
+		justify-content: space-between;
+	}
+	.card {
+		cursor: pointer;
+		position: relative;
+		width: 340px;
+		height: 524px;
+		&:hover {
+			bottom: 20px;
+		}
+		img {
+			border-radius: 8px;
+		}
+		p {
+			position: absolute;
+			bottom: 40px;
+			left: 40px;
+			color: #fff;
+			font-size: 40px;
+			font-weight: 700;
+		}
+	}
+}

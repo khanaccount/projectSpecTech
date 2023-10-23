@@ -1,0 +1,87 @@
+.Delivery {
+	display: flex;
+	width: 100%;
+	max-width: 1690px;
+	margin: 0 auto;
+	padding: 0 10px;
+	justify-content: space-between;
+	&Info {
+		padding-top: 40px;
+		padding-bottom: 180px;
+		h1 {
+			font-size: 42px;
+			font-weight: 500;
+		}
+		p {
+			width: 579px;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 140%;
+		}
+	}
+
+	.starText {
+		display: flex;
+		padding-top: 64px;
+		img {
+			margin-right: 19px;
+		}
+		p {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 140%;
+		}
+	}
+
+	.Address {
+		display: flex;
+		justify-content: space-between;
+		width: 700px;
+		margin-top: 85px;
+		&Box {
+			display: flex;
+			width: 340px;
+			height: 200px;
+			background-color: #f8f8f8;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+			h4 {
+				padding-bottom: 24px;
+				color: #393838;
+				font-size: 18px;
+				font-weight: 500;
+			}
+			p {
+				color: #848692;
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+	&Map {
+		position: relative;
+		.deliveryBtn {
+			position: absolute;
+			top: 40px;
+			left: 40px;
+			z-index: 1;
+			padding: 12px 14px;
+			border-radius: 4px;
+			background: #27ae60;
+
+			color: #fff;
+			font-family: Montserrat;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 140%;
+			&:active {
+				transform: scale(0.9);
+			}
+			&Active {
+				background-color: #848692;
+			}
+		}
+	}
+}
