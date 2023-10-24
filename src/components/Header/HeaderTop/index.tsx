@@ -16,7 +16,7 @@ const HeaderTop: React.FC = () => {
 				<ul>
 					<li>
 						<Link to="/services" className={location.pathname === "/services" ? s.active : ""}>
-							Услугиsdsd
+							Услуги
 						</Link>
 					</li>
 					<li>
