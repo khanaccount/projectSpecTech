@@ -103,7 +103,7 @@ const Delivery: React.FC = () => {
 								<Circle
 									geometry={[[59.936864, 30.315778], 100000]}
 									options={{
-										draggable: true,
+										draggable: false,
 										fillColor: "#DB709377",
 										strokeColor: "#990066",
 										strokeOpacity: 0.8,
