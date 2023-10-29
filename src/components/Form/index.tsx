@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import s from "./index.module.scss";
@@ -36,10 +37,16 @@ const Validation: React.FC = () => {
 		values: FormValues,
 		{ setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
 	) => {
-		// Здесь вы можете добавить логику отправки данных
-		console.log(values);
-		setIsFormSubmitted(true);
-		setSubmitting(false);
+		axios.post("http://localhost:8000", values).then((response) => {
+			console.log("Данные отправлены", response.data);
+		});
+		try {
+			console.log(values);
+			setIsFormSubmitted(true);
+			setSubmitting(false);
+		} catch (error) {
+			error;
+		}
 	};
 
 	return (
