@@ -10,8 +10,9 @@ class contactFormView(APIView):
         output = [
             {
                 "name": output.name,
-                "number": output.number,
-                "text": output.text,
+                "phone": output.phone,
+                "comments": output.comments,
+                "privacyPolicy": output.privacyPolicy,
             }
             for output in contactForm.objects.all()
         ]
