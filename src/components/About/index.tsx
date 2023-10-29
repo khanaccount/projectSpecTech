@@ -21,7 +21,7 @@ const About: React.FC = () => {
 					</div>
 					<p>Единиц техники</p>
 				</div>
-				<div>
+				<div className={s.rightNumber}>
 					<h1>15</h1>
 					<p>Карьеров</p>
 				</div>

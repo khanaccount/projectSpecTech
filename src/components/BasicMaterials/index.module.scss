@@ -34,3 +34,48 @@
 		}
 	}
 }
+
+@media (max-width: 375px) {
+	.Materials {
+		max-width: 100%;
+		padding: 0 20px;
+		h1 {
+			padding-left: 40px;
+			padding-bottom: 25px;
+			font-size: 24px;
+			font-weight: 500;
+		}
+		.cards {
+			padding-left: 45px;
+			display: flex;
+			flex-direction: column;
+		}
+		.card {
+			cursor: pointer;
+			position: relative;
+			width: 250px;
+			height: 290px;
+			margin-bottom: 25px;
+
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+			&:hover {
+				bottom: 20px;
+			}
+			img {
+				width: 250px;
+				height: 290px;
+				border-radius: 8px;
+			}
+			p {
+				position: absolute;
+				bottom: 25px;
+				left: 25px;
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+			}
+		}
+	}
+}

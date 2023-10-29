@@ -1,11 +1,17 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import s from "./index.module.scss";
 
 const HeaderTop: React.FC = () => {
 	const location = useLocation();
+	const [isBurgerMenuOpen, setIsBurgerMenuOpen] = React.useState(true);
+
+	const toggleBurgerMenu = () => {
+		setIsBurgerMenuOpen(!isBurgerMenuOpen);
+	};
 
 	return (
 		<div id="top" className={s.HeaderTop}>
@@ -13,6 +19,9 @@ const HeaderTop: React.FC = () => {
 				<Link className={s.logoLink} to="/">
 					<img width={209} src="logo.svg" alt="logo" />
 				</Link>
+				<div className={s.BurgerMenuIcon} onClick={toggleBurgerMenu}>
+					{isBurgerMenuOpen == false ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+				</div>
 				<ul>
 					<li>
 						<Link to="/services" className={location.pathname === "/services" ? s.active : ""}>

@@ -8,6 +8,7 @@
 	justify-content: space-between;
 	align-items: center;
 	&Left {
+		padding: 0 20px;
 		width: 580px;
 		h1 {
 			padding-bottom: 28px;
@@ -53,6 +54,79 @@
 		}
 		.leftNumber {
 			display: flex;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.About {
+		margin: 0;
+		max-width: 375px;
+		padding: 0 20px;
+		display: flex;
+		flex-direction: column;
+		&Left {
+			max-width: 375px;
+			padding-bottom: 20px;
+			h1 {
+				padding-bottom: 28px;
+				font-size: 24px;
+				font-weight: 500;
+			}
+			p {
+				color: #67675f;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 142%;
+				letter-spacing: 0.09px;
+			}
+		}
+		&Right {
+			border-radius: 24px;
+			background: #f8f8f8;
+			width: 335px;
+			height: 338px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			h1 {
+				color: #1d1d1b;
+				font-size: 50px;
+				font-weight: 600;
+				line-height: 142%;
+				letter-spacing: 0.44px;
+			}
+			span {
+				color: #27ae60;
+				font-size: 40px;
+				font-weight: 500;
+				line-height: 142%;
+				letter-spacing: 0.2px;
+			}
+			p {
+				color: #67675f;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 142%;
+				letter-spacing: 0.12px;
+			}
+			.leftNumber {
+				justify-content: center;
+				display: flex;
+				position: relative;
+				span {
+					top: -15px;
+					right: 15px;
+					position: absolute;
+				}
+			}
+			.rightNumber {
+				text-align: center;
+				p {
+					font-size: 24px;
+				}
+			}
 		}
 	}
 }

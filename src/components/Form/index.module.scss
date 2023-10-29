@@ -9,7 +9,7 @@
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -150,5 +150,154 @@
 	.phone::placeholder,
 	.comments::placeholder {
 		opacity: 0.5;
+	}
+}
+
+@media (max-width: 375px) {
+	.FormBg {
+		width: 375px;
+		background: #ffff;
+		padding: 0px !important;
+		padding-bottom: 56px;
+		z-index: 1;
+		position: relative;
+	}
+	.FormContent {
+		display: flex;
+		padding: 0 5px !important;
+		flex-direction: column;
+		align-items: baseline;
+	}
+
+	.FormText {
+		margin-top: 60px;
+		width: 375px;
+		padding-top: 60px;
+		padding: 0 20px;
+		h1 {
+			padding-bottom: 23px;
+			color: #1e1e1c;
+			font-size: 24px;
+			font-weight: 500;
+		}
+		h4 {
+			width: 335px;
+			padding-bottom: 8px;
+			color: #27ae60;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 140%;
+		}
+		p {
+			width: 310px;
+			padding-bottom: 30px;
+			color: #1e1e1c;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 140%;
+		}
+		button {
+			cursor: pointer;
+			color: #fff;
+			font-size: 22px;
+			font-weight: 500;
+			background-color: #27ae60;
+			padding: 20px 36px;
+			border-radius: 8px;
+
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+	}
+
+	.FormValid {
+		margin: 0;
+		border-radius: 12px;
+		background: #fff;
+		box-shadow: 0px 4px 40px 0px rgba(7, 17, 51, 0.07);
+		max-width: 365px;
+
+		span {
+			display: none;
+		}
+
+		.activeBtn {
+			margin-top: 25px;
+			cursor: pointer;
+			color: #fff;
+			font-size: 22px;
+			font-weight: 500;
+			background-color: #27ae60;
+			padding: 20px 100px;
+			border-radius: 8px;
+
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+
+		.sentButton {
+			margin-top: 35px;
+			cursor: pointer;
+			color: #fff;
+			font-size: 22px;
+			font-weight: 500;
+			background-color: #cfcfcf;
+			padding: 20px 100px;
+			border-radius: 8px;
+
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+
+		.name,
+		.phone {
+			color: #181a28;
+			opacity: 1;
+			padding-left: 30px;
+			font-size: 18px;
+			font-weight: 400;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 335px;
+			height: 50px;
+			border-radius: 6px;
+			border: 1px solid #ddd;
+			margin-bottom: 35px;
+		}
+
+		.comments {
+			padding-right: 20px;
+			padding-top: 31px;
+			color: #181a28;
+			opacity: 1;
+			padding-left: 30px;
+			font-size: 18px;
+			font-weight: 400;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 335px;
+			height: 134px;
+			border-radius: 6px;
+			border: 1px solid #ddd;
+			resize: none;
+			outline: none;
+		}
+		.privacyPolicy {
+			margin-top: 35px;
+			margin-right: 10px;
+			font-size: 12px;
+			font-weight: 400;
+		}
+
+		.name::placeholder,
+		.phone::placeholder,
+		.comments::placeholder {
+			opacity: 0.5;
+		}
 	}
 }

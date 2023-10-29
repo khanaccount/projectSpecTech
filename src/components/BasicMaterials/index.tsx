@@ -25,7 +25,7 @@ const BasicMaterials: React.FC = () => {
 				{cards.map((card) => (
 					<Link key={card.id} to={card.href}>
 						<div className={s.card}>
-							<img width={340} height={524} src={card.imgUrl} alt="material" />
+							<img src={card.imgUrl} alt="material" />
 							<p>{card.text}</p>
 						</div>
 					</Link>

@@ -4,6 +4,19 @@
 	background-size: cover;
 	background-position: center center;
 }
+@media (max-width: 375px) {
+	.bgImg {
+		width: 375px;
+		background: url(headerBgAdaptive.jpg);
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 39.07%, rgba(35, 35, 35, 0.7) 100%),
+			url(headerBgAdaptive.jpg);
+		background-repeat: no-repeat;
+		height: 600px;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
 .bgFooter {
 	background-color: #424141;
 	position: relative;

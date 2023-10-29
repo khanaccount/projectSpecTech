@@ -2,12 +2,16 @@
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
 	&Nav {
 		padding-top: 30px;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
+
+		.BurgerMenuIcon {
+			display: none;
+		}
 		img {
 			padding-right: 91px;
 		}
@@ -17,14 +21,43 @@
 				&:not(:last-child) {
 					padding-right: 48px;
 				}
-				font-size: 16px;
-				font-weight: 400;
-				text-decoration: none;
 				cursor: pointer;
 			}
 		}
 	}
 	.active {
 		color: #27ae60;
+	}
+}
+
+@media (max-width: 375px) {
+	.HeaderTop {
+		max-width: 375px;
+		padding: 0 20px;
+
+		&Nav {
+			padding-top: 10px;
+			display: flex;
+			align-items: ce;
+			.BurgerMenuIcon {
+				display: block;
+				padding-left: 120px;
+			}
+
+			img {
+				width: 200px;
+			}
+
+			ul {
+				position: fixed;
+				left: -100%;
+				top: 0;
+				flex-direction: column;
+
+				li {
+					padding: 50px 0;
+				}
+			}
+		}
 	}
 }
