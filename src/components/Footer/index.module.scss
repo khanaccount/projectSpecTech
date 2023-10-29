@@ -56,6 +56,8 @@
 		height: 165px;
 		padding: 0 10px;
 		display: flex;
+		position: relative;
+		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
 		.politic {
@@ -89,12 +91,21 @@
 		}
 
 		.logoLinks {
+			position: absolute;
 			display: flex;
+			width: 310px;
 			align-items: center;
-			width: 24px;
 			height: 24px;
+			left: 10px;
+			bottom: 81px;
+
 			a:not(:last-child) {
 				padding-right: 15px;
+			}
+			a {
+				img {
+					width: 30px;
+				}
 			}
 			h3 {
 				color: #fff;
