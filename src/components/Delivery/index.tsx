@@ -51,7 +51,7 @@ const address: Address[] = [
 ];
 
 const Delivery: React.FC = () => {
-	const [deliveryAreaVisible, setDeliveryAreaVisible] = React.useState(false);
+	const [deliveryAreaVisible, setDeliveryAreaVisible] = React.useState(true);
 
 	const handleAreaVisible = () => {
 		setDeliveryAreaVisible(!deliveryAreaVisible);
@@ -91,11 +91,10 @@ const Delivery: React.FC = () => {
 				<YMaps>
 					<div>
 						<Map
-							width={950}
-							height={980}
+							className={s.mapContainer}
 							defaultState={{
 								center: [59.936864, 30.315778],
-								zoom: 8,
+								zoom: 7,
 								controls: ["zoomControl", "fullscreenControl"]
 							}}
 							modules={["control.ZoomControl", "control.FullscreenControl"]}>
