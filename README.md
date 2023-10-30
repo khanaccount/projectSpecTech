@@ -7,14 +7,10 @@
 - scss
   
 # Backend
-- react-yandex-maps
-- yup, formik
-- react-scroll
-- react-router-dom
-- axios
-- scss
+- Django Rest Framework
+- CORS
 
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Django
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
