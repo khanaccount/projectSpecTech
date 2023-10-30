@@ -29,35 +29,3 @@
 		color: #27ae60;
 	}
 }
-
-@media (max-width: 375px) {
-	.HeaderTop {
-		max-width: 375px;
-		padding: 0 20px;
-
-		&Nav {
-			padding-top: 10px;
-			display: flex;
-			align-items: ce;
-			.BurgerMenuIcon {
-				display: block;
-				padding-left: 120px;
-			}
-
-			img {
-				width: 200px;
-			}
-
-			ul {
-				position: fixed;
-				left: -100%;
-				top: 0;
-				flex-direction: column;
-
-				li {
-					padding: 50px 0;
-				}
-			}
-		}
-	}
-}
